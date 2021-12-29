@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+/* Reset CSS */
+* {
+    font-family: 'GmarketSansBold';
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul, ol {
+	list-style: none;
+}
+table {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+img {
+	vertical-align: middle; 
+	border: none;
+}
+a {
+	text-decoration: none;
+	color: #123
+}
+
+/* Common CSS */
+body {
+	/* font-family: Arial Helvetica, "궁서", Dotum, sans-serif;  */
+background: linear-gradient(-180deg, #2B3794, #fff);
+background-size: 100% 150%;
+animation: gradient 10s ease infinite;
+}
+
+
+@keyframes gradient {
+0% {
+background-position: 0% 50%;
+}
+    50% {
+background-position: 100% 0%;
+}
+100% {
+background-position: 0% 50%;
+}
+    
+}
+.wrapper {
+	margin: 0 auto;
+	width: 960px;
+	height: 1200px;
+}
+#header {
+	height: 200px;
+	/* border: 1px solid #09f; */
+}
+#header .logo {
+	float: left;
+	margin: 20px 0 0 30px;
+}
+#header .logo img {
+	width: 400px;
+}
+#header .menu {
+	float: right;
+	margin: 40px 0 10px 0;
+}
+
+
+#gnb > ul > li {
+    
+	display: inline-block;
+	position: relative;
+	padding: 30px 0;
+}
+#gnb > ul > li > a {
+    color: #fff;
+	display: block;
+	padding: 10px 40px;
+	font-size: 19px;
+}
+#gnb > ul > li:hover > a,
+#gnb > ul > li.active > a {
+	color: #fff;
+}
+
+#gnb ul ul {
+	display: none;
+	position: absolute;
+	top: 40px;
+	z-index: 10;
+	padding: 10px 0;
+	width: 100%;
+	background-color: #939DF9;
+}
+#gnb ul ul a {
+	display: block;
+	line-height: 30px;
+	text-align: center;
+	font-size: 15px;
+}
+#gnb ul ul a:hover,
+#gnb ul ul a:focus {
+	background-color: #3947C6;
+	color: #fff;
+}
+.main_image {
+	position: relative;
+	height: 400px;
+	/* border: 1px solid #09f; */
+}
+.main_image .title {
+	position: absolute;
+	left: 0;
+	top: 42%;
+	z-index: 2;
+	width: 100%;
+}
+.main_image .title h2 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: normal;
+	color: #fff;
+}
+.main_image .image {
+	position: relative;
+	width: 960px;
+	height: 350px;
+	overflow: hidden;
+}
+.main_image .image ul {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 5760px; /* 960*6 */
+	height: 350px;
+}
+.main_image .image li {
+	float: left;
+	width: 960px;
+	height: 350px;
+}
+.main_image .image img {
+	max-width: 100%;
+}
+#contents {
+	height: 500px;
+	/* border: 1px solid #09f; */
+}
+#contents .up {
+	height: 
+    380px;
+	/* border: 1px solid #09f; */
+}
+#contents .up .notice {
+	float: right;
+	margin-top: 65px;
+	width: 600px;
+	/* border: 1px solid #09f; */
+}
+#contents .up .notice h3 {
+	font-size: 17px;
+	color: #fff;
+}
+#contents .up .notice .table1 table {
+	margin-top: 20px;
+}
+#contents .up .notice .table1 th,
+#contents .up .notice .table1 td {
+	padding: 5px;
+	line-height: 1.5;
+	font-size: 15px;
+	border-bottom: 1px solid #fff;
+}
+#contents .up .notice .table1 td.date {
+	text-align: right;
+	font-size: 14px;
+	color: #fff;
+
+}
+#contents .up .partner {
+	float: left;
+	margin-top: 60px;
+	width: 800;
+	/* border: 1px solid #09f; */
+}
+#contents .up .partner h3 {
+	font-size: 17px;
+	color: #fff;
+}
+#contents .up .partner li {
+	margin-top: 10px;
+	text-align: center;
+}
+#contents .down .banner {
+	margin-top: 10px;
+	text-align: center;
+}
+#contents .down .banner h3 {
+	font-size: 20px;
+	color: #fff;
+}
+#contents .down .banner ul li {display: inline-block;
+	margin: 2px 40px 0 40px;
+	width: 200px;
+	height: 90px;
+	line-height: 90px;
+	border: 1px solid #fff;
+    border-radius: 20px;
+}
+
+#contents .down .banner ul li:hover {
+    background: linear-gradient(45deg, #9EA4DB, #fff, #9EA4DB);
+background-size: 100% 200%;
+animation: gradient 4s ease infinite;
+	
+    
+}
+#footer {
+	padding: 55px 40px;
+	height: 150px;
+    
+}
+#footer .top ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+#footer .top ul li a {
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+}
+#footer .bottom {
+	margin-top: 20px;
+	line-height: 1.3;
+	font-size: 16px;
+	color: #49519B;
+}
+#footer .bottom a {
+	color: #49519B;
+}
